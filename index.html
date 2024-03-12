@@ -1,0 +1,323 @@
+<!-- Aatma Patel, GRPH-2010-506, March 5th, 2024 -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pat's picks</title> <!-- webpage title-->
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<header>
+    <!-- the header section of the webpage -->
+    <button class="logo">ap</button> <!-- the logo button -->
+    <a href="index.html" class="logo">ap</a> <!-- logo button linking to homepage -->
+    <nav class="navbar">
+        <!-- nav bar  -->
+        <ul class="nav-links">
+            <!-- Unordered list for navigation links -->
+            <li><a href="mission.html">MISSION STATEMENT</a></li>
+            <!-- A navigation link to the mission statement page -->
+        </ul>
+    </nav>
+    <h1 class="heading">pat’s picks</h1> <!-- top heading of the webpage -->
+</header>
+<!-- button tags to navigate to different sections/cards -->
+<button class="tag_ayurvedic" onclick="location.href='#indewildCard';">Ayurvedic</button>
+<!-- ayurvedic tag links to inde wild card -->
+<button class="tag_halal" onclick="location.href='#moraCard';">Halal</button>
+<!-- halal tag links to mora cosmetics card -->
+<button class="tag_gender" onclick="location.href='#sahajanCard';">Gender-neutral</button>
+<!-- gender neutral tag links to sahajan card -->
+<button class="tag_vegan" onclick="location.href='#mangoCard';">Vegan</button>
+<!-- vegan tag links to mango people card -->
+<button class="tag_acne" onclick="location.href='#somaCard';">Acne-prone</button>
+<!-- acne tag links to soma ayurvedic card -->
+<button class="tag_age" onclick="location.href='#sahajanCard';">Anti-aging</button>
+<!-- anti-age tag links to sahajan card -->
+<button class="tag_hyper" onclick="location.href='#livetintedCard';">Hyperpigmentation</button>
+<!-- hyperpigmentation tag links to live tinted card -->
+<button class="tag_cruelty" onclick="location.href='#mangoCard';">Cruelty-free</button>
+<!-- cruelty tag links to mango people card -->
+<button class="tag_clean" onclick="location.href='#praktiCard';">Clean-beauty</button>
+<!-- cruelty tag links to prakti beauty card -->
+<button class="tag_barrier" onclick="location.href='#aavraniCard';">Barrier repair</button>
+<!-- barrier repair tag links to aavrani card -->
+<button class="tag_melanin" onclick="location.href='#somaCard';">Melanin</button>
+<!-- melanin tag links to soma card -->
+<button class="tag_maternity" onclick="location.href='#vishaCard';">Maternity</button>
+<!-- maternity tag links to visha card -->
+<button class="tag_child" onclick="location.href='#yellowCard';">Child-care</button>
+<!-- child-care tag links to yellow beauty card -->
+<button class="tag_luxury" onclick="location.href='#ranavatCard';">Luxury</button>
+<!-- luxury tag links to ranavat card -->
+<button class="tag_gmo" onclick="location.href='#ranavatCard';">Non-GMO</button>
+<!-- non-gmo tag links to ranavat card -->
+<button class="tag_sulfate" onclick="location.href='#kulfiCard';">Sulfate-free</button>
+<!-- sulfate-free tag links to kulfi beauty card -->
+<button class="tag_paraben" onclick="location.href='#anomalyCard';">Paraben-free</button>
+<!-- paraben-free tag links to anomaly card -->
+<button class="tag_frag" onclick="location.href='#ghleeCard';">Fragrance-free</button>
+<!-- frag-free tag links to ghlee card -->
+<button class="tag_comed" onclick="location.href='#oathCard';">Non-comedogenic</button>
+<!-- non-comedogenic tag links to oath MD card -->
+<button class="tag_inflam" onclick="location.href='#yellowCard';">Anti-inflammatory</button>
+<!-- anti-inflam tag links to yellow beauty card -->
+
+<!-- ranavat brand card with logo, description, and tags -->
+<div class="card_ranavat" id="ranavatCard">
+    <img src="ranavat.jpg" class="img_ranavat" alt="img">
+    <div class="content_ranavat">
+        <p>"RANAVAT Redefines luxury skin and haircare by combining modern and Ayurvedic science to bring you
+            innovative, results-driven formulas that elevate your beauty ritual."</p>
+        <div class="keywords">
+            <button class="key_ayurvedic1">Ayurvedic</button>
+            <button class="key_luxury1">Luxury</button>
+            <button class="key_age1">Anti-age</button>
+            <button class="key_gmo1">Non-GMO</button>
+        </div>
+    </div>
+</div>
+<!-- live tinted card with logo, description, and tags -->
+<div class="card_livetinted" id="livetintedCard">
+    <img src="livetinted.jpg" class="img_livetinted" alt="img">
+    <div class="content_livetinted">
+        <p>"We're Live Tinted. We're here to solve unique beauty concerns for all skin tones. Everything we make is
+            clean, hyperpigmentation-focused, and bold enough to show up on everyone."</p>
+            <!-- caption credit: from ranavat about us page -->
+
+        <div class="keywords">
+            <button class="key_vegan1">Vegan</button>
+            <button class="key_cruelty1">Cruelty-free</button>
+            <button class="key_clean1">Clean-beauty</button>
+            <button class="key_hyper1">Hyperpigmentation</button>
+        </div>
+    </div>
+</div>
+<!-- inde wild card with logo, description, and tags -->
+<div class="card_indewild" id="indewildCard">
+    <img src="indewild.png" class="img_indewild" alt="img">
+    <div class="content_indewild">
+        <p>"At indē wild our formulas were developed exactly the way you’d expect: science-backed, vegan and cruelty
+            free!"</p>
+            <!-- caption credit: from inde wild about us page -->
+        <div class="keywords">
+            <button class="key_ayurvedic2">Ayurvedic</button>
+            <button class="key_vegan2">Vegan</button>
+            <button class="key_cruelty2">Cruelty-free</button>
+        </div>
+    </div>
+</div>
+<!-- kulfi beauty card with logo, description, and tags -->
+<div class="card_kulfi" id="kulfiCard">
+    <img src="kulfi.jpg" class="img_kulfi" alt="img">
+    <div class="content_kulfi">
+        <p>"Kulfi has got to the heart of what South Asian women are yearning for, both from their communities and
+            the world at large."</p>
+        <!-- caption credit: from kulfi beauty about us page -->
+
+        <div class="keywords">
+            <button class="key_vegan3">Vegan</button>
+            <button class="key_cruelty3">Cruelty-free</button>
+            <button class="key_sulfate1">Sulfate-free</button>
+            <button class="key_paraben1">Paraben-free</button>
+        </div>
+    </div>
+</div>
+<!-- ghlee card with logo, description, and tags -->
+<div class="card_ghlee" id="ghleeCard">
+    <img src="ghlee.jpg" class="img_ghlee" alt="img">
+    <div class="content_ghlee">
+        <p>"At Ghlee, we’re committed to bringing a modern and innovative approach to South Asian skincare. Our
+            mission is to create effective solutions with a simple ingredient list."</p>
+            <!-- caption credit: from ghlee about us page -->
+        <div class="keywords">
+            <button class="key_ayurvedic3">Ayurvedic</button>
+            <button class="key_clean2">Clean-beauty</button>
+            <button class="key_frag1">Fragrance-free</button>
+        </div>
+    </div>
+</div>
+<!-- mango people card with logo, description, and tags -->
+
+<div class="card_mango" id="mangoCard">
+    <img src="mango.png" class="img_mango" alt="img">
+    <div class="content_mango">
+        <p>"Our evolved approach to makeup is reflected in our commitment to use natural elements that revitalize and
+            elevate the skin, while adding rich and long-wearing pigments."</p>
+            <!-- caption credit: from mango people about us page -->
+        <div class="keywords">
+            <button class="key_ayurvedic4">Ayurvedic</button>
+            <button class="key_vegan4">Vegan</button>
+            <button class="key_cruelty4">Cruelty-free</button>
+        </div>
+    </div>
+</div>
+<!-- aavrani card with logo, description, and tags -->
+
+<div class="card_aavrani" id="aavraniCard">
+    <img src="aavrani.png" class="img_aavrani" alt="img">
+    <div class="content_aavrani">
+        <p>"AAVRANI products are propelled by the latest in clinically-proven science and rooted in centuries-old
+            Ayurvedic beauty traditions."</p>
+            <!-- caption credit: from aavrani about us page -->
+        <div class="keywords">
+            <button class="key_ayurvedic5">Ayurvedic</button>
+            <button class="key_luxury2">Luxury</button>
+            <button class="key_barrier1">Barrier repair</button>
+        </div>
+    </div>
+</div>
+<!-- prakti beauty card with logo, description, and tags -->
+
+<div class="card_prakti" id="praktiCard">
+    <img src="prakti.png" class="img_prakti" alt="img">
+    <div class="content_prakti">
+        <p>"Prakti is committed to making groundbreaking skincare through quality ingredients, ethical sourcing and
+            manufacturing, sustainable packaging, and technological innovation."</p>
+            <!-- caption credit: from prakti beauty about us page -->
+        <div class="keywords">
+            <button class="key_ayurvedic6">Ayurvedic</button>
+            <button class="key_vegan5">Vegan</button>
+            <button class="key_clean3">Clean-beauty</button>
+        </div>
+    </div>
+</div>
+
+<!-- sahajan card with logo, description, and tags -->
+<div class="card_sahajan" id="sahajanCard">
+    <img src="sahajan.png" class="img_sahajan" alt="img">
+    <div class="content_sahajan">
+        <p>"Derived from the Hindi word for “intuitive” – Sahajan brings you the evidence to follow your intuition
+            and choose clean beauty."</p>
+            <!-- caption credit: from sahajan about us page -->
+        <div class="keywords">
+            <button class="key_ayurvedic7">Ayurvedic</button>
+            <button class="key_age2">Anti-age</button>
+            <button class="key_gender1">Gender-neutral</button>
+
+        </div>
+    </div>
+</div>
+<!-- soma ayurvedic card with logo, description, and tags -->
+<div class="card_soma" id="somaCard">
+    <img src="soma.png" class="img_soma" alt="img">
+    <div class="content_soma">
+        <p>"Soma Ayurvedic makes the cleanest and most effective skincare products on the planet. Our all natural,
+            vegan, and minimalist formulas are rooted in Ayurveda."</p>
+            <!-- caption credit: from soma ayurvedic about us page -->
+
+        <div class="keywords">
+            <button class="key_ayurvedic8">Ayurvedic</button>
+            <button class="key_luxury3">Luxury</button>
+            <button class="key_acne1">Acne-prone</button>
+            <button class="key_melanin1">Melanin</button>
+
+        </div>
+    </div>
+</div>
+<!-- mora cosmetics card with logo, description, and tags -->
+<div class="card_mora" id="moraCard">
+    <img src="mora.jpg" class="img_mora" alt="img">
+    <div class="content_mora">
+        <p>"Mora Cosmetics is the distilled life work of women who wanted to bring a clean cosmetics line that
+            nourishes beauty, not mask it. Like the beauty of a pearl, we see the beauty that already exists in us
+            all."</p>
+            <!-- caption credit: from mora about us page -->
+
+        <div class="keywords">
+            <button class="key_halal1">Halal</button>
+            <button class="key_vegan6">Vegan</button>
+            <button class="key_cruelty5">Cruelty</button>
+
+        </div>
+    </div>
+</div>
+<!-- oath MD card with logo, description, and tags -->
+<div class="card_oath" id="oathCard">
+    <img src="oath.jpg" class="img_oath" alt="img">
+    <div class="content_oath">
+        <p>"Oath MD understand the science behind your skin, which is why these products are carefully curated using
+            only natural ingredients—without unnecessary additives."</p>
+            <!-- caption credit: from oath MD about us page -->
+
+        <div class="keywords">
+            <button class="key_vegan7">Vegan</button>
+            <button class="key_sulfate2">Sulfate-free</button>
+            <button class="key_paraben2">Paraben-free</button>
+            <button class="key_frag2">Fragrance-free</button>
+            <button class="key_comed1">Non-comedogenic</button>
+        </div>
+    </div>
+</div>
+<!-- anomaly card with logo, description, and tags -->
+<div class="card_anomaly" id="anomalyCard">
+    <img src="anomaly.png" class="img_anomaly" alt="img">
+    <div class="content_anomaly">
+        <p>"Anomaly Haircare is made of superior, clean formulas that are intentionally created. Beauty is however
+            YOU choose to define it. We're here to help you create your best hair day."</p>
+            <!-- caption credit: from anomaly haircare about us page -->
+
+        <div class="keywords">
+            <button class="key_vegan8">Vegan</button>
+            <button class="key_cruelty6">Cruelty-free</button>
+            <button class="key_clean4">Clean-beauty</button>
+            <button class="key_paraben3">Paraben-free</button>
+        </div>
+    </div>
+</div>
+<!-- yellow beauty card with logo, description, and tags -->
+<div class="card_yellow" id="yellowCard">
+    <img src="yellow.png" class="img_yellow" alt="img">
+    <div class="content_yellow">
+        <p>"Yellow Beauty is a natural skincare collection rooted in turmeric; a powerful skin ally that reduces
+            redness and brightens dark marks."</p>
+            <!-- caption credit: from yellow beauty about us page -->
+
+        <div class="keywords">
+            <button class="key_ayurvedic9">Ayurvedic</button>
+            <button class="key_child1">Child-care</button>
+            <button class="key_inflam1">Anti-inflammatory</button>
+
+        </div>
+    </div>
+</div>
+<!-- Samreen's Vanity card with logo, description, and tags -->
+<div class="card_vanity" id="vanityCard">
+    <img src="vanity.jpg" class="img_vanity" alt="img">
+    <div class="content_vanity">
+        <p>"Samreen's Vanity is a clean and conscious brand that creates vegan, cruelty-free and paraben-free
+            cosmetics designed for all skin shades and gender expressions."</p>
+            <!-- caption credit: from samreen's vanity about us page -->
+
+        <div class="keywords">
+            <button class="key_halal2">Halal</button>
+            <button class="key_cruelty7">Cruelty-free</button>
+            <button class="key_clean5">Clean-beauty</button>
+        </div>
+    </div>
+</div>
+
+<!-- visha skincare card with logo, description, and tags -->
+<div class="card_visha" id="vishaCard">
+    <img src="visha.png" class="img_visha" alt="img">
+    <div class="content_visha">
+        <p>"Visha Skincare gives more than one result to address skin concerns from acne and hyperpigmentation,
+            cellulite, stretch marks, melasma and pandemic skin."</p>
+        <div class="keywords">
+            <button class="key_ayurvedic10">Ayurvedic</button>
+            <button class="key_hyper2">Hyperpigmentation</button>
+            <button class="key_maternity1">Maternity</button>
+            <!-- caption credit: from visha skincare about us page -->
+
+
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

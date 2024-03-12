@@ -1,0 +1,2247 @@
+/* Aatma Patel, GRPH-2010-506, March 5th, 2024 */
+body {
+    background-color: #181717; /* sets the background color of the webpage to a dark shade */
+    background-image: url("silk.png"); /* adds a background image for texture */
+    background-repeat: no-repeat; /* ensures the background image does not repeat */
+    background-size: cover; /* ensures the background image covers the entire webpage */
+    padding: 0; /* resets padding to 0 to avoid any default spacing inside the body element */
+    margin: 0; /* resets margin to 0 to remove any default spacing outside the body element */
+}
+
+.logo {
+    width: 80px; /* sets the width of the logo */
+    height: 80px; /* sets the height of the logo */
+    background-color: #6f83d5; /* sets the logo's background color to a soft blue */
+    border: none; /* removes any border from the logo */
+    border-radius: 80%; /* makes the logo's corners rounded */
+    color: black; /* sets the text color inside the logo to black */
+    font-family: 'Shrikhand', regular; /* applies the 'Shrikhand' font to the text inside the logo */
+    font-size: 40px; /* sets the font size of the text inside the logo */
+    position: absolute; /* positions the logo absolutely within its relative container */
+    top: 40px; /* positions the logo 40px from the top of its container */
+    left: 280px; /* positions the logo 280px from the left of its container */
+    display: flex; /* applies flexbox layout to the logo for centering content */
+    justify-content: center; /* centers the logo's content horizontally */
+    align-items: center; /* centers the logo's content vertically */
+    cursor: pointer; /* changes the cursor to a pointer when hovering over the logo */
+    outline: none; /* removes any outline from the logo */
+    text-decoration: none; /* removes any text decoration from the logo */
+}
+
+.logo:hover { /* CODE CREDIT SOURCE: DarkCode Buttons With Awesome Hover Effects Using Only HTML & CSS*/
+    color: #6f83d5; /* changes the text color to soft blue on hover */
+    background-color: black; /* changes the background color to black on hover */
+    transition-duration: 0.3s; /* adds a transition effect when hovering over the logo */
+}
+
+.heading {
+    position: absolute; /* positions the heading absolutely within its relative container */
+    top: 50px; /* positions the heading 50px from the top of its container */
+    right: 270px; /* positions the heading 270px from the right of its container */
+    font-family: 'Shrikhand'; /* applies the 'Shrikhand' font to the heading */
+    font-size: 150px; /* sets the font size of the heading */
+    letter-spacing: 4px; /* adds spacing between the letters in the heading */
+    font-weight: lighter; /* makes the font weight of the heading lighter */
+    color: white; /* sets the color of the heading text to white */
+}
+
+.navbar {
+    position: absolute; /* positions the navbar absolutely within its relative container */
+    top: 65px; /* positions the navbar 65px from the top of its container */
+    right: 280px; /* positions the navbar 280px from the right of its container */
+    font-family: 'Roboto', sans-serif, 'regular'; /* applies the 'Roboto' font to the navbar text */
+    font-size: 15px; /* sets the font size of the navbar text */
+    font-weight: 100; /* makes the font weight of the navbar text very thin */
+}
+
+.nav-links {
+    list-style-type: none; /* removes bullet points from the list */
+    margin: 0; /* resets the margin of the list */
+    padding: 0; /* resets the padding of the list */
+}
+
+.nav-links li {
+    display: inline; /* displays list items in a line */
+    margin-right: 70px; /* adds spacing to the right of each list item */
+}
+
+.nav-links li:last-child {
+    margin-right: 0; /* removes the right margin from the last list item */
+}
+
+.nav-links li a {
+    text-decoration: none; /* removes the underline from links */
+    color: white; /* sets the color of the link text to white */
+    font-weight: 100; /* makes the font weight of the link text very thin */
+}
+
+.nav-links li a:hover {/* CODE CREDIT SOURCE: DarkCode Buttons With Awesome Hover Effects Using Only HTML & CSS*/
+    color: #6f83d5; /* changes the link text color to soft blue on hover */
+    transition-duration: 0.05s; /* adds a quick transition effect when hovering over links */
+    font-size: 19px; /* increases the font size of the link text on hover */
+    font-style: italic; /* changes the font style to italic on hover */
+}
+
+/* sets up the look for our ayurvedic tag */
+.tag_ayurvedic {
+    background-color: #1A5DC2; /* nice deep blue */
+    border: none; /* smooth edges only */
+    color: rgb(255, 255, 255); /* text pops out as white */
+    font-family: 'Roboto', 'sans-serif'; /* roboto's sleek but not too formal */
+    font-weight: 100; /* super light text, keeps it chill */
+    font-size: 18px; /* not too big, not too small */
+    padding: 10px 30px; /* comfy space around the text */
+    height: 45px; /* just the right height */
+    text-align: center; /* keeps the text centered, obviously */
+    text-decoration: none; /* no underlines here, thanks */
+    display: inline-block; /* sits in line but respects padding & stuff */
+    margin: 5px 3px; /* bit of space to breathe from its neighbors */
+    border-radius: 20px; /* those soft, round edges */
+    position: absolute; /* it's gonna sit exactly where we tell it to */
+    top: 370px; /* parks it down the screen a bit */
+    left: 19.5%; /* and this is how far from the left */
+    transform: translateX(-50%); /* centers it nicely */
+    cursor: pointer; /* changes the cursor so people know it's clickable */
+}
+/* CODE CREDIT SOURCE: DarkCode Buttons With Awesome Hover Effects Using Only HTML & CSS*/
+/* makes the tag look interactive when you hover over it */
+.tag_ayurvedic:hover {
+    background-color: #082b6c; /* darker shade for the hover state */
+    transition-duration: 0.3s; /* smooth transition makes it feel responsive */
+}
+/* the halal tag */
+.tag_halal {
+    background-color: #c04713;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 370px;
+    left: 29.5%;
+    transform: translateX(-50%);
+}
+/* the halal hover effect */
+.tag_halal:hover {
+    background-color: #692a05;
+    transition-duration: 0.3s;
+}
+/* the gender tag */
+.tag_gender {
+    background-color: #9084dd;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 370px;
+    left: 41.3%;
+    transform: translateX(-50%);
+}
+/* CODE CREDIT SOURCE: DarkCode Buttons With Awesome Hover Effects Using Only HTML & CSS*/
+/* the gender hover effect, REPEAT for all tags below */
+.tag_gender:hover {
+    background-color: #433a82;
+    transition-duration: 0.3s;
+}
+
+.tag_vegan {
+    background-color: #1ac28d;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 370px;
+    left: 53.5%;
+    transform: translateX(-50%);
+}
+
+.tag_vegan:hover {
+    background-color: #095f44;
+    transition-duration: 0.3s;
+}
+
+.tag_acne {
+    background-color: #819fcd;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 370px;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.tag_acne:hover {
+    background-color: #2e486e;
+    transition-duration: 0.3s;
+}
+
+.tag_age {
+    background-color: #9a2819;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 370px;
+    left: 77%;
+    transform: translateX(-50%);
+}
+
+.tag_age:hover {
+    background-color: #671005;
+    transition-duration: 0.3s;
+}
+
+.tag_hyper {
+    background-color: #C3AE3B;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 440px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.tag_hyper:hover {
+    background-color: #675a0f;
+    transition-duration: 0.3s;
+}
+
+.tag_cruelty {
+    background-color: #406b2c;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 440px;
+    left: 44.5%;
+    transform: translateX(-50%);
+}
+
+.tag_cruelty:hover {
+    background-color: #1b3111;
+    transition-duration: 0.3s;
+}
+
+.tag_clean {
+    background-color: #603E83;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 440px;
+    left: 57%;
+    transform: translateX(-50%);
+}
+
+.tag_clean:hover {
+    background-color: #322044;
+    transition-duration: 0.3s;
+}
+
+.tag_barrier {
+    background-color: #1B3984;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 440px;
+    left: 70%;
+    transform: translateX(-50%);
+}
+
+.tag_barrier:hover {
+    background-color: #102049;
+    transition-duration: 0.3s;
+}
+
+.tag_melanin {
+    background-color: #a05e12;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 510px;
+    left: 26.5%;
+    transform: translateX(-50%);
+}
+
+.tag_melanin:hover {
+    background-color: #6d3a16;
+    transition-duration: 0.3s;
+}
+
+.tag_maternity {
+    background-color: #c21a7c;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 510px;
+    left: 37.5%;
+    transform: translateX(-50%);
+}
+
+.tag_maternity:hover {
+    background-color: #591160;
+    transition-duration: 0.3s;
+}
+
+.tag_child {
+    background-color: #da9191;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 510px;
+    left: 49.3%;
+    transform: translateX(-50%);
+}
+
+.tag_child:hover {
+    background-color: #715454;
+    transition-duration: 0.3s;
+}
+
+.tag_luxury {
+    background-color: #1AB8C2;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 510px;
+    left: 60.7%;
+    transform: translateX(-50%);
+}
+
+.tag_luxury:hover {
+    background-color: #13737a;
+    transition-duration: 0.3s;
+}
+
+.tag_gmo {
+    background-color: #a7b83a;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 510px;
+    left: 71.5%;
+    transform: translateX(-50%);
+}
+
+.tag_gmo:hover {
+    background-color: #48510e;
+    transition-duration: 0.3s;
+}
+
+.tag_sulfate {
+    background-color: #3d1bea;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 580px;
+    left: 20%;
+    transform: translateX(-50%);
+}
+
+.tag_sulfate:hover {
+    background-color: #23117e;
+    transition-duration: 0.3s;
+}
+
+.tag_paraben {
+    background-color: #75ad87;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 580px;
+    left: 33%;
+    transform: translateX(-50%);
+}
+
+.tag_paraben:hover {
+    background-color: #3e6249;
+    transition-duration: 0.3s;
+}
+
+.tag_frag {
+    background-color: #9b3f31;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 580px;
+    left: 47%;
+    transform: translateX(-50%);
+}
+
+.tag_frag:hover {
+    background-color: #571f16;
+    transition-duration: 0.3s;
+}
+
+.tag_comed {
+    background-color: #3ea7fd;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 580px;
+    left: 62.5%;
+    transform: translateX(-50%);
+}
+
+.tag_comed:hover {
+    background-color: #1d5c90;
+    transition-duration: 0.3s;
+
+}
+
+.tag_inflam {
+    background-color: #1ea81c;
+    border: none;
+    color: #ffffff;
+    font-family: 'Roboto', 'sans-serif';
+    font-weight: 100;
+    font-size: 18px;
+    padding: 10px 30px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px 3px;
+    border-radius: 20px;
+    position: absolute;
+    top: 580px;
+    left: 79%;
+    transform: translateX(-50%);
+}
+
+.tag_inflam:hover {
+    background-color: #0e610c;
+    transition-duration: 0.3s;
+
+}
+/* CODE CREDIT SOURCE: Bedimcode CSS Card Hover Effects | HTML & CSS*/
+/* SAME FOR ALL OTHER CARDS AS WELL*/
+/* styling for the ranavat card */
+.card_ranavat {
+    position: relative; /* sets its position relative to its container */
+    width: 250px; /* width of the card */
+    height: 350px; /* height of the card */
+    top: 795px; /* positions it 795px from the top */
+    left: 150px; /* positions it 150px from the left */
+    background-color: #3e4b7e; /* background color of the card */
+    border-radius: 20px; /* border radius for rounded corners */
+    box-shadow: 0 4px 8px #202743; /* adds shadow for depth */
+    overflow: hidden; /* hides overflow content */
+    display: flex; /* uses flexbox for layout */
+    flex-direction: column; /* stacks content vertically */
+    justify-content: center; /* centers content vertically */
+    align-items: center; /* centers content horizontally */
+}
+
+/* styling for the ranavat image */
+.img_ranavat {
+    width: 95px; /* sets a fixed width */
+    height: 90px; /* sets a fixed height */
+    border-radius: 50%; /* makes it circular */
+    position: absolute; /* absolute positioning for precise placement */
+    top: 25px; /* positions it 25px from the top */
+    left: 50%; /* horizontally centers it */
+    transform: translateX(-50%); /* fine-tunes horizontal centering */
+    object-fit: cover; /* makes sure the image fills its container */
+}
+
+/* styling for the content within the ranavat card */
+.content_ranavat {
+    padding: 50px; /* adds space around the content */
+    text-align: center; /* centers the text */
+    font-family: 'Roboto', sans-serif; /* clean and modern font */
+    color: white; /* white text for contrast */
+    top: 40px; /* adjusts vertical position */
+    font-size: 12px; /* slightly smaller font size */
+}
+
+/* styling for the ranavat key badge */
+.key_ranavat {
+    margin-top: 10px; /* adds top margin for spacing */
+}
+
+/* styling for the smaller tags inside ranavat brand card */
+.key_ayurvedic1 {
+    background-color: #1A5DC2; /* background color */
+    border: none; /* no border */
+    color: #ffffff; /* text color */
+    font-family: 'Roboto', 'sans-serif'; /* font family */
+    border-radius: 10px; /* border radius for rounded corners */
+    padding: 5px 10px; /* padding around the text */
+    margin: 5px 3px; /* margin for spacing */
+    font-size: 13px; /* font size */
+    position: absolute; /* absolute positioning */
+    bottom: 75px; /* positions it from the bottom */
+    left: 32%; /* positions it from the left */
+    transform: translateX(-50%); /* centers it horizontally */
+}
+
+/* REPEAT this for all other smaller tags */
+.key_luxury1 {
+    background-color: #1AB8C2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 63%;
+    transform: translateX(-50%);
+}
+
+.key_age1 {
+    background-color: #C22E1A;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.key_gmo1 {
+    background-color: #a7b83a;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 62.5%;
+    transform: translateX(-50%);
+}
+
+.card_livetinted {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: 445px;
+    left: 445px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_livetinted {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_livetinted {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 40px;
+    font-size: 12px;
+}
+
+.key_livetinted {
+    margin-top: 10px;
+}
+
+.key_hyper1 {
+    background-color: #C3AE3B;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.key_vegan1 {
+    background-color: #1ac28d;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.key_cruelty1 {
+    background-color: #406b2c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 62.5%;
+    transform: translateX(-50%);
+}
+
+.key_clean1 {
+    background-color: #603E83;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card_indewild {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: 95px;
+    left: 740px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_indewild {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_indewild {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 5px;
+    font-size: 12px;
+
+}
+
+.key_indewild {
+    margin-top: 10px;
+}
+
+.key_ayurvedic2 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.key_vegan2 {
+    background-color: #1ac28d;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 65%;
+    transform: translateX(-50%);
+}
+
+.key_cruelty2 {
+    background-color: #406b2c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 46%;
+    transform: translateX(-50%);
+}
+
+.card_kulfi {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -253px;
+    left: 1035px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_kulfi {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_kulfi {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_kulfi {
+    margin-top: 10px;
+}
+
+.key_vegan3 {
+    background-color: #1ac28d;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 30%;
+    transform: translateX(-50%);
+}
+
+.key_cruelty3 {
+    background-color: #406b2c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 63%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.key_sulfate1 {
+    background-color: #3d1bea;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 27%;
+    transform: translateX(-50%);
+}
+
+.key_paraben1 {
+    background-color: #75ad87;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 68%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+}
+
+.card_ghlee {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -205px;
+    left: 150px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_ghlee {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_ghlee {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_ghlee {
+    margin-top: 10px;
+}
+
+.key_ayurvedic3 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 27%;
+    transform: translateX(-50%);
+}
+
+.key_clean2 {
+    background-color: #603E83;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 65%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.key_frag1 {
+    background-color: #9b3f31;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 46%;
+    transform: translateX(-50%);
+}
+
+.card_mango {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -555px;
+    left: 445px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_mango {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_mango {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_mango {
+    margin-top: 10px;
+}
+
+.key_ayurvedic4 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 35%;
+    transform: translateX(-50%);
+
+}
+
+.key_vegan4 {
+    background-color: #1ac28d;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 65%;
+    transform: translateX(-50%);
+
+
+}
+
+.key_cruelty4 {
+    background-color: #406b2c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 46%;
+    transform: translateX(-50%);
+
+
+}
+
+.card_aavrani {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -905px;
+    left: 740px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_aavrani {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_aavrani {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_aavrani {
+    margin-top: 10px;
+}
+
+.key_ayurvedic5 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 35%;
+    transform: translateX(-50%);
+}
+
+.key_luxury2 {
+    background-color: #1AB8C2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 65%;
+    transform: translateX(-50%);
+
+}
+
+.key_barrier1 {
+    background-color: #1B3984;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 46%;
+    transform: translateX(-50%);
+
+}
+
+.card_prakti {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -1255px;
+    left: 1035px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_prakti {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_prakti {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_prakti {
+    margin-top: 10px;
+}
+
+.key_ayurvedic6 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 35%;
+    transform: translateX(-50%);
+
+}
+
+.key_vegan5 {
+    background-color: #1ac28d;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 65%;
+    transform: translateX(-50%);
+
+}
+
+.key_clean3 {
+    background-color: #603E83;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 46%;
+    transform: translateX(-50%);
+
+}
+
+.card_sahajan {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -1205px;
+    left: 150px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_sahajan {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_sahajan {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_sahajan {
+    margin-top: 10px;
+}
+
+.key_ayurvedic7 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 32%;
+    transform: translateX(-50%);
+
+}
+
+.key_age2 {
+    background-color: #9a2819;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 65%;
+    transform: translateX(-50%);
+
+}
+
+.key_gender1{
+    background-color: #9084dd;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 46%;
+    transform: translateX(-50%);
+
+}
+
+.card_soma {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -1555px;
+    left: 445px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_soma {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_soma {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_soma {
+    margin-top: 10px;
+}
+
+.key_ayurvedic8 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 32%;
+    transform: translateX(-50%);
+
+}
+
+.key_luxury3 {
+    background-color: #1AB8C2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 63%;
+    transform: translateX(-50%);
+
+}
+.key_acne1{
+    background-color: #819fcd;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 33%;
+    transform: translateX(-50%);
+
+}
+
+.key_melanin1 {
+    background-color: #a05e12;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 67%;
+    transform: translateX(-50%);
+
+}
+
+.card_mora {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -1905px;
+    left: 740px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_mora {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_mora {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_mora {
+    margin-top: 10px;
+}
+
+.key_halal1 {
+    background-color: #c04713;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 35%;
+    transform: translateX(-50%);
+
+}
+
+.key_vegan6 {
+    background-color: #1ac28d;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 60%;
+    transform: translateX(-50%);
+
+}
+
+.key_cruelty5 {
+    background-color: #406b2c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.card_oath {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -2255px;
+    left: 1035px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_oath {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_oath {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_oath {
+    margin-top: 10px;
+}
+
+.key_vegan7 {
+    background-color: #1ac28d;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 30%;
+    transform: translateX(-50%);
+
+}
+
+.key_sulfate2 {
+    background-color: #3d1bea;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 62%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+
+}
+
+.key_paraben2 {
+    background-color: #75ad87;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 26%;
+    transform: translateX(-50%);
+
+}
+
+.key_frag2 {
+    background-color: #9b3f31;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 69%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+}
+
+.key_comed1 {
+    background-color: #3ea7fd;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.card_anomaly {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -2205px;
+    left: 150px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_anomaly {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_anomaly {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_anomaly {
+    margin-top: 10px;
+}
+
+.key_vegan8 {
+    background-color: #1ac28d;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 31%;
+    transform: translateX(-50%);
+
+}
+
+.key_cruelty6 {
+    background-color: #406b2c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 63%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.key_clean4 {
+    background-color: #603E83;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 28%;
+    transform: translateX(-50%);
+
+}
+
+.key_paraben3 {
+    background-color: #75ad87;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 69%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+}
+
+.card_yellow {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -2555px;
+    left: 445px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_yellow {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_yellow {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_yellow {
+    margin-top: 10px;
+}
+
+.key_ayurvedic9 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 30%;
+    transform: translateX(-50%);
+
+}
+
+.key_child1 {
+    background-color: #da9191;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 65%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+
+}
+
+.key_inflam1 {
+    background-color: #1ea81c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+
+}
+
+.card_vanity {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -2905px;
+    left: 740px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_vanity {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_vanity {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_vanity {
+    margin-top: 10px;
+}
+
+.key_halal2 {
+    background-color: #c04713;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 29%;
+    transform: translateX(-50%);
+
+}
+
+.key_cruelty7 {
+    background-color: #406b2c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 60%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.key_clean5 {
+    background-color: #603E83;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.card_visha {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    top: -3255px;
+    left: 1035px;
+    background-color: #3e4b7e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #202743;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_visha {
+    width: 95px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+
+}
+
+.content_visha {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    top: 0px;
+    font-size: 12px;
+}
+
+.key_visha {
+    margin-top: 10px;
+}
+
+.key_ayurvedic10 {
+    background-color: #1A5DC2;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 32%;
+    transform: translateX(-50%);
+
+}
+
+.key_hyper2 {
+    background-color: #C3AE3B;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.key_maternity1 {
+    background-color: #c21a7c;
+    border: none;
+    color: #ffffff;
+    border: none;
+    font-family: 'Roboto', 'sans-serif';
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 5px 3px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    position: absolute;
+    bottom: 75px;
+    left: 65%;
+    transform: translateX(-50%);
+
+}
